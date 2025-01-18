@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Saldo Devedor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calcular Percentual do Saldo Devedor</h1>
+        <div class="container">
+            <!-- Nome do colaborador -->
+            <div class="input-row">
+                <div class="input-group full-width">
+                    <label>Nome do Colaborador:</label>
+                    <input type="text" id="nomeColaborador" placeholder="Digite o nome">
+                </div>
+            </div>
+
+            <!-- Contratado em -->
+            <h2>Contratado em:</h2>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Fundo Comum (%)</label>
+                    <input type="number" id="fundoComum" placeholder="Ex: 100">
+                </div>
+                <div class="input-group">
+                    <label>Taxa Administrativa (%)</label>
+                    <input type="number" id="taxaAdministrativa" placeholder="Ex: 17">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Fundo de Reserva (%)</label>
+                    <input type="number" id="fundoReserva" placeholder="Ex: 3">
+                </div>
+                <div class="input-group">
+                    <label>Taxa de Adesão (%)</label>
+                    <input type="number" id="taxaAdesao" placeholder="Ex: 1">
+                </div>
+            </div>
+
+            <!-- Percentuais pagos em -->
+            <h2>Percentuais pagos em:</h2>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Pago em Fundo Comum (%)</label>
+                    <input type="number" id="pagoFundoComum" placeholder="Ex: 22.4789">
+                </div>
+                <div class="input-group">
+                    <label>Pago em Fundo Reserva (%)</label>
+                    <input type="number" id="pagoFundoReserva" placeholder="Ex: 0.5479">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Pago Taxa Administrativa (%)</label>
+                    <input type="number" id="pagoTaxaAdministrativa" placeholder="Ex: 13.4779">
+                </div>
+                <div class="input-group">
+                    <label>Pago Taxa de Adesão (%)</label>
+                    <input type="number" id="pagoTaxaAdesao" placeholder="Ex: 0.5983">
+                </div>
+            </div>
+
+            <!-- Botões -->
+            <div class="button-row">
+                <button onclick="calcular()">Calcular</button>
+                <button class="reset" onclick="zerar()">Zerar</button>
+            </div>
+
+            <!-- Resultado -->
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
