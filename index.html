@@ -10,30 +10,28 @@
     <div class="calculator">
         <h1>Calcular Percentual do Saldo Devedor</h1>
         <div class="container">
-            <!-- Nome do colaborador -->
             <div class="input-row">
                 <div class="input-group full-width">
-                    <label>Nome do Colaborador:</label>
-                    <input type="text" id="nomeColaborador" placeholder="Digite o nome">
+                    <label>Grupo e Cota <span style="color:red;">*</span></label>
+                    <input type="text" id="grupoCota" placeholder="Ex: 00000/0000.00" required>
                 </div>
             </div>
 
-            <!-- Contratado em -->
             <h2>Contratado em:</h2>
             <div class="input-row">
                 <div class="input-group">
-                    <label>Fundo Comum (%)</label>
-                    <input type="number" id="fundoComum" placeholder="Ex: 100">
+                    <label>Fundo Comum (%) <span style="color:red;">*</span></label>
+                    <input type="number" id="fundoComum" placeholder="Ex: 100" required>
                 </div>
                 <div class="input-group">
-                    <label>Taxa Administrativa (%)</label>
-                    <input type="number" id="taxaAdministrativa" placeholder="Ex: 17">
+                    <label>Taxa Administrativa (%) <span style="color:red;">*</span></label>
+                    <input type="number" id="taxaAdministrativa" placeholder="Ex: 17" required>
                 </div>
             </div>
             <div class="input-row">
                 <div class="input-group">
-                    <label>Fundo de Reserva (%)</label>
-                    <input type="number" id="fundoReserva" placeholder="Ex: 3">
+                    <label>Fundo de Reserva (%) <span style="color:red;">*</span></label>
+                    <input type="number" id="fundoReserva" placeholder="Ex: 3" required>
                 </div>
                 <div class="input-group">
                     <label>Taxa de Adesão (%)</label>
@@ -41,22 +39,21 @@
                 </div>
             </div>
 
-            <!-- Percentuais pagos em -->
             <h2>Percentuais pagos em:</h2>
             <div class="input-row">
                 <div class="input-group">
-                    <label>Pago em Fundo Comum (%)</label>
-                    <input type="number" id="pagoFundoComum" placeholder="Ex: 22.4789">
+                    <label>Pago em Fundo Comum (%) <span style="color:red;">*</span></label>
+                    <input type="number" id="pagoFundoComum" placeholder="Ex: 22.4789" required>
                 </div>
                 <div class="input-group">
-                    <label>Pago em Fundo Reserva (%)</label>
-                    <input type="number" id="pagoFundoReserva" placeholder="Ex: 0.5479">
+                    <label>Pago em Fundo Reserva (%) <span style="color:red;">*</span></label>
+                    <input type="number" id="pagoFundoReserva" placeholder="Ex: 0.5479" required>
                 </div>
             </div>
             <div class="input-row">
                 <div class="input-group">
-                    <label>Pago Taxa Administrativa (%)</label>
-                    <input type="number" id="pagoTaxaAdministrativa" placeholder="Ex: 13.4779">
+                    <label>Pago em Taxa Administrativa (%) <span style="color:red;">*</span></label>
+                    <input type="number" id="pagoTaxaAdministrativa" placeholder="Ex: 13.4779" required>
                 </div>
                 <div class="input-group">
                     <label>Pago Taxa de Adesão (%)</label>
@@ -64,14 +61,15 @@
                 </div>
             </div>
 
-            <!-- Botões -->
             <div class="button-row">
-                <button onclick="calcular()">Calcular</button>
+                <button id="btnCalcular">Calcular</button>
                 <button class="reset" onclick="zerar()">Zerar</button>
             </div>
 
-            <!-- Resultado -->
             <div class="result" id="result"></div>
+        </div>
+        <div class="footer">
+            <p>Campos marcados com <span>*</span> são obrigatórios para realizar o cálculo.</p>
         </div>
     </div>
     <script src="app.js"></script>
