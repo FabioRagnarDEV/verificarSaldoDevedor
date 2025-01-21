@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f01010fa; /* Vermelho claro */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -146,4 +146,6 @@ h2 {
     text-align: left;
     border-bottom: 2px solid #e60000;
     padding-bottom: 5px;
+    width: 100%; /* Garante alinhamento uniforme */
+    box-sizing: border-box;
 }
