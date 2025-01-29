@@ -149,3 +149,11 @@ h2 {
     width: 100%; /* Garante alinhamento uniforme */
     box-sizing: border-box;
 }
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
