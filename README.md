@@ -1,16 +1,13 @@
 # Calculadora de Saldo Devedor
 
 ## Descrição do Projeto
-
-Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript (front-end). O objetivo central é ajudar os colaboradores a calcular corretamente o percentual do saldo devedor das cotas a ser pago, evitando a necessidade de acionamento desnecessário ao departamento.
-
-O intuito é apresentar este projeto à empresa, demonstrando sua funcionalidade simples, mas eficaz, proporcionando uma melhor experiência ao cliente que terá suas dúvidas sobre o cálculo do saldo devedor rapidamente resolvidas. Além disso, os atendentes terão maior agilidade para suprir suas próprias dúvidas e as dos clientes.
+Este projeto oferece aos colaboradores uma forma rápida e fácil de calcular o percentual restante do saldo devedor das cotas. A ferramenta, com design intuitivo e interface amigável, permite que o usuário insira os dados necessários e obtenha o resultado de forma clara e precisa, sem a necessidade de contatar o departamento. O projeto representa um avanço na experiência do cliente, que poderá resolver dúvidas sobre o saldo devedor de forma independente.
 
 ## Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
+- **HTML5**: Estruturação do conteúdo e elementos da interface.
+- **CSS**: Estilização da aplicação, garantindo um design responsivo e amigável.
+- **JavaScript**: Lógica de cálculo, validação de campos e interatividade da aplicação.
+- **Bootstrap**: Framework utilizado para auxiliar na **responsividade e no layout da aplicação**.
 
 ## Funcionalidades
 - Cálculo do percentual do saldo devedor de cotas
@@ -19,28 +16,45 @@ O intuito é apresentar este projeto à empresa, demonstrando sua funcionalidade
 - Botão de reset para limpar os campos
 
 
-## Uso
-Abra o arquivo index.html no navegador ou acesse esse link: <https://fabioragnardev.github.io/verificarSaldoDevedor/>.
+## Como Usar
+1. **Acesse a Aplicação:**
+    * Abra o arquivo **`index.html`** no navegador ou acesse o link: **[Calculadora de Saldo Devedor](https://fabioragnardev.github.io/verificarSaldoDevedor/)**.
 
-Preencha os campos obrigatórios marcados com *.
+2. **Preencha os Campos:**
+    * Insira os valores nos campos obrigatórios, marcados com *.
+    * Os campos incluem:
+        * Grupo e Cota
+        * Percentuais contratados (Fundo Comum, Taxa Administrativa, Fundo de Reserva, *Taxa de Adesão [se tiver]*)
+        * Percentuais pagos (Fundo Comum, Taxa Administrativa, Fundo de Reserva, *Taxa de Adesão [se tiver]*)
 
-Clique no botão "Calcular" para ver o percentual do saldo devedor.
+3. **Calcule o Saldo Devedor:**
+    * Clique no botão "Calcular" para obter o percentual restante do saldo devedor.
 
-Utilize o botão "Zerar" para limpar todos os campos.
+4. **Confira o Resultado:**
+    * O resultado será exibido na tela, seguido de uma caixa de diálogo para confirmar se o cálculo está compatível com o sistema.
+    * Caso o cálculo não esteja compatível, uma mensagem orientará o usuário a buscar ajuda com a madrinha/padrinho ou o departamento de ajustes.
+
+5. **Reiniciar:**
+    * Utilize o botão **"Zerar"** para limpar todos os campos e realizar um novo cálculo.
+
 
 ## Estrutura do Projeto
-index.html - Estrutura principal da aplicação
+- **Cálculo do Percentual do Saldo Devedor**: Calcula o percentual restante do saldo devedor com base nos valores inseridos.
 
-estilo.css - Estilos da aplicação
+- **Interface Intuitiva e Responsiva**: Design moderno e adaptável a diferentes dispositivos (desktop, tablet e mobile).
 
-app.js - Lógica do cálculo e validação dos campos
+- **Validação de Campos Obrigatórios**: Garante que todos os campos necessários sejam preenchidos antes do cálculo.
 
+- **Botão de Reset**: Permite limpar todos os campos e reiniciar o processo.
+
+- **Modal de Confirmação**: Exibe uma caixa de diálogo personalizada para confirmar se o cálculo está compatível com o sistema.
+
+- **Feedback Visual**: Destaque em campos inválidos e mensagens claras para orientar o usuário.
 
 
 
 ## Validações e Testes
 
-O projeto já passou por validações com outros operadores e foi devidamente testado, garantindo a total conformidade com os critérios definidos.
+O projeto foi validado e testado por outros operadores, garantindo que todas as funcionalidades estejam em conformidade com os critérios definidos. A aplicação foi desenvolvida com foco em usabilidade, desempenho e clareza, proporcionando uma experiência fluida e sem erros.
 
 <p align="left"><i>Projeto Desenvolvido por Fabio França ©</i></p>
-
