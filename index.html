@@ -14,8 +14,8 @@
         <h1>Calcular Percentual do Saldo Devedor</h1>
         <div class="image-container">
             <img src="https://www.projetopack.com.br/2020/wp-content/uploads/2021/07/Embracon.jpg" 
-                 alt="Logo Embracon" 
-                 style="max-width: 65%; height: auto; border-radius: 20px;">
+                alt="Logo Embracon" 
+                style="max-width: 75%; height: auto; border-radius: 25px;">
         <div class="container">
             <div class="input-row">
                 <div class="input-group full-width">
@@ -75,6 +75,23 @@
 
             <div class="result" id="result"></div>
         </div>
+
+        <div class="confirmation-box" id="confirmationBox" style="display: none;">
+            <p>O percentual está compatível com o sistema?</p>
+            <div class="button-row">
+                <button id="btnSim">Sim</button>
+                <button id="btnNao">Não</button>
+            </div>
+        </div>
+
+        <div id="customAlert" class="custom-alert" style="display: none;">
+            <div class="custom-alert-content">
+                <h3>Alerta!</h3>
+                <p id="customAlertMessage"></p>
+                <button id="customAlertOK">OK</button>
+            </div>
+        </div>
+
         <div class="footer">
             <p>Campos marcados com <span>*</span> são obrigatórios para realizar o cálculo.</p>
         </div>

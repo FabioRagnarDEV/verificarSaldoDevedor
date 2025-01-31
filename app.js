@@ -12,7 +12,7 @@ document.getElementById('btnCalcular').addEventListener('click', function () {
     });
 
     if (!allValid) {
-        alert('Por favor, preencha todos os campos obrigatórios marcados com *.');
+        showCustomAlert('Por favor, preencha todos os campos obrigatórios marcados com *.');
         return;
     }
 
@@ -36,12 +36,40 @@ function calcular() {
 
     const saldoDevedor = totalInicial - totalPago;
 
-    document.getElementById('result').textContent =
-        `O percentual do saldo devedor do grupo e cota ${grupoCota} é de ${saldoDevedor.toFixed(4)}%`;
+    const resultado = `O percentual restante do saldo devedor do grupo e cota ${grupoCota} é de ${saldoDevedor.toFixed(4)}%`;
+    document.getElementById('result').textContent = resultado;
+
+    // Exibe a seção de confirmação
+    document.getElementById('confirmationBox').style.display = 'block';
 }
 
+// Adiciona eventos de clique nos botões "Sim" e "Não"
+document.getElementById('btnSim').addEventListener('click', function () {
+    showCustomAlert("Obrigado por confirmar!"); 
+    document.getElementById('confirmationBox').style.display = 'none'; 
+});
+
+document.getElementById('btnNao').addEventListener('click', function () {
+    showCustomAlert("Por favor, considere solicitar ajuda a seu lider imediato para maiores detalhes ou abrir caso ao departamento de ajuste."); 
+    document.getElementById('confirmationBox').style.display = 'none'; 
+});
+
+// Função para exibir o modal personalizado
+function showCustomAlert(message) {
+    document.getElementById('customAlertMessage').textContent = message;
+    document.getElementById('customAlert').style.display = 'flex';
+}
+
+// Fechar o modal ao clicar no botão "OK"
+document.getElementById('customAlertOK').addEventListener('click', function () {
+    document.getElementById('customAlert').style.display = 'none';
+});
+
+//Zera os campos ao clicar no botão "Zerar"
 function zerar() {
     document.querySelectorAll('.input-group input').forEach(input => input.value = '');
     document.getElementById('result').textContent = '';
+    document.getElementById('confirmationBox').style.display = 'none';
 }
+
 console.log("Desenvolvido por Fabio França (SAC Eletrônico)");
