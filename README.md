@@ -1,7 +1,9 @@
 # Calculadora de Saldo Devedor
 
 ## Descrição do Projeto
-Este projeto oferece aos colaboradores uma forma rápida e fácil de calcular o percentual restante do saldo devedor das cotas. A ferramenta, com design intuitivo e interface amigável, permite que o usuário insira os dados necessários e obtenha o resultado de forma clara e precisa, sem a necessidade de contatar o departamento. O projeto representa um avanço na experiência do cliente, que poderá resolver dúvidas sobre o saldo devedor de forma independente.
+A **Calculadora de Saldo Devedor** é uma aplicação web desenvolvida para auxiliar colaboradores e clientes no cálculo preciso do percentual do saldo devedor de cotas. O projeto foi criado com o objetivo de simplificar e agilizar o processo de cálculo, reduzindo a necessidade de acionamentos desnecessários ao departamento de ajustes e proporcionando uma experiência mais eficiente para todos os envolvidos.
+
+Com uma interface intuitiva e responsiva, a aplicação permite que os usuários insiram os dados necessários e obtenham o percentual do saldo devedor de forma rápida e confiável. Além disso, a ferramenta inclui validações de campos e um botão de reset para facilitar o uso.
 
 ## Tecnologias Utilizadas
 - **HTML5**: Estruturação do conteúdo e elementos da interface.
