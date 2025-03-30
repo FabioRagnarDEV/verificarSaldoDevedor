@@ -20,6 +20,8 @@ document.getElementById('btnCalcular').addEventListener('click', function () {
 });
 
 function calcular() {
+    document.getElementById('result').textContent = "Calculando...";
+    setTimeout(() => {
     const grupoCota = document.getElementById('grupoCota').value;
     const fundoComum = parseFloat(document.getElementById('fundoComum').value) || 0;
     const taxaAdministrativa = parseFloat(document.getElementById('taxaAdministrativa').value) || 0;
@@ -39,8 +41,8 @@ function calcular() {
     const resultado = `O percentual restante do saldo devedor do grupo e cota ${grupoCota} é de ${saldoDevedor.toFixed(4)}%`;
     document.getElementById('result').textContent = resultado;
 
-    // Exibe a seção de confirmação
     document.getElementById('confirmationBox').style.display = 'block';
+    }, 700);
 }
 
 // Adiciona eventos de clique nos botões "Sim" e "Não"
