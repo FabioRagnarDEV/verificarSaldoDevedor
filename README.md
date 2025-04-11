@@ -19,7 +19,7 @@ Com uma interface intuitiva e responsiva, a aplicação permite que os usuários
 
 ## Como Usar  
 1. **Acesse a Aplicação:**  
-    * Abra o arquivo **`index.html`** no navegador ou acesse o link: **[Calculadora de Saldo Devedor](https://fabioragnardev.github.io/verificarSaldoDevedor/)**.  
+    * Abra o arquivo **`index.html`** no navegador.
 
 2. **Preencha os Campos:**  
     * Insira os valores nos campos obrigatórios, marcados com *.  
